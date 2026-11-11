@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  </head>
+  <body class="bg-light">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 rounded-3">
+            <div class="card-body p-4">
+              <h2 class="text-center text-primary mb-4 fw-bold">To-Do List</h2>
+
+              <div class="input-group mb-3">
+                <input type="text" id="inputTugas" class="form-control form-control-lg" placeholder="Ketik tugas baru di sini yaaa" />
+                <button class="btn btn-primary btn-lg" id="btnTambah">Tambah</button>
+              </div>
+
+              <!-- Tombol filter -->
+              <div class="btn-group w-100 mb-3">
+                <button class="btn btn-primary" data-filter="semua">Semua</button>
+                <button class="btn btn-outline-primary" data-filter="aktif">Aktif</button>
+                <button class="btn btn-outline-primary" data-filter="selesai">Selesai</button>
+              </div>
+
+              <div id="areaArray"></div>
+
+              <!-- Penghitung dan hapus yang selesai -->
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <small class="text-muted" id="teksHitung">0 tugas belum selesai</small>
+                <button class="btn btn-outline-danger btn-sm" id="btnHapusSelesai">Hapus yang selesai</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
